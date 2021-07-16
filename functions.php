@@ -148,8 +148,9 @@ function finelineglobal_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+	
 }
-add_action( 'wp_enqueue_scripts', 'finelineglobal_scripts' );
+add_action( 'wp_enqueue_scripts', 'finelineglobal_scripts', 9999 );
 
 /**
  * Implement the Custom Header feature.
@@ -177,4 +178,3 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-
