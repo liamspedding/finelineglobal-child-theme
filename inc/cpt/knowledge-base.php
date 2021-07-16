@@ -3,13 +3,13 @@
 // Register Custom Post Type
 function finelineglobal_job_knowledge_base_custom_post_type() {
 
-    $single = 'Knowledge Base Article';
-    $plural = 'Knowledge Base Articles';
+    $single = 'Knowledge Centre Article';
+    $plural = 'Knowledge Centre';
 
 	$labels = array(
 		'name'                  => _x( $plural, 'Post Type General Name', 'text_domain' ),
 		'singular_name'         => _x( $single, 'Post Type Singular Name', 'text_domain' ),
-		'menu_name'             => __( 'Knowledge Base', 'text_domain' ),
+		'menu_name'             => __( 'Knowledge Centre', 'text_domain' ),
 		'name_admin_bar'        => __( $single, 'text_domain' ),
 		'archives'              => __( $single.' Archives', 'text_domain' ),
 		'attributes'            => __( $single.' Attributes', 'text_domain' ),
@@ -54,7 +54,7 @@ function finelineglobal_job_knowledge_base_custom_post_type() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
 	);
-	register_post_type( 'knowledge-base', $args );
+	register_post_type( 'knowledge-centre', $args );
 
 }
 add_action( 'init', 'finelineglobal_job_knowledge_base_custom_post_type', 0 );

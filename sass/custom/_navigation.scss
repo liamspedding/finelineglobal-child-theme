@@ -1,4 +1,32 @@
+body.single-knowledge-base{
+.elementor-section{
+    position: unset;
+
+    .elementor-container{
+        position: unset;
+
+        .elementor-column{
+            position: unset;
+
+            .elementor-widget-wrap{
+                position: unset;
+
+                .elementor-widget{
+                    position: unset;
+
+                    #mega-menu-wrap-menu-1{
+                        position: unset !important;
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
 .max-mega-menu{
+    position: unset !important;
+
     li{
         ul.mega-sub-menu {
             padding-bottom: 20px !important;
