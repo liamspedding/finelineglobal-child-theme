@@ -153,6 +153,16 @@ function finelineglobal_scripts() {
 add_action( 'wp_enqueue_scripts', 'finelineglobal_scripts', 9999 );
 
 /**
+ * Reguister Custom Post Types.
+ */
+require get_template_directory() . '/inc/cpt/job-vacancies.php';
+
+/**
+ * Reguister Custom Post Types.
+ */
+require get_template_directory() . '/inc/cpt/knowledge-base.php';
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
