@@ -158,6 +158,7 @@ add_action( 'wp_enqueue_scripts', 'finelineglobal_scripts', 9999 );
 require get_template_directory() . '/inc/cpt/job-vacancies.php';
 require get_template_directory() . '/inc/cpt/knowledge-base.php';
 require get_template_directory() . '/inc/cpt/timeline.php';
+require get_template_directory() . '/inc/cpt/case-studies.php';
 
 /**
  * Implement the Custom Header feature.
@@ -185,3 +186,12 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+// Add Post Format Support
+function themename_post_formats_setup() {
+	add_theme_support( 'post-formats', array( 'aside' ) );
+
+	// add post-formats to post_type 'my_custom_post_type'
+	// add_post_type_support( 'my_custom_post_type', 'post-formats' );
+}
+add_action( 'after_setup_theme', 'themename_post_formats_setup' );
