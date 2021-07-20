@@ -145,6 +145,9 @@ function finelineglobal_scripts() {
 
 	wp_enqueue_script( 'finelineglobal-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
+	// Slick Slider
+	wp_enqueue_script( 'finelineglobal-slick', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array('jquery'), _S_VERSION, true );
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -161,6 +164,10 @@ require get_template_directory() . '/inc/cpt/timeline.php';
 require get_template_directory() . '/inc/cpt/case-studies.php';
 require get_template_directory() . '/inc/cpt/technology-portfolio.php';
 
+/**
+ * Reguister Custom Shortcodes.
+ */
+require get_template_directory() . '/inc/shortcodes/knowledge-base-slider.php';
 /**
  * Implement the Custom Header feature.
  */

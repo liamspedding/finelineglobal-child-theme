@@ -1,7 +1,11 @@
 // Colours
 $orange: #EF4929;
+$dark-blue: #153246;
 
 @import "home";
 @import "navigation";
 @import "timeline";
 @import "blog";
+
+@import "slick";
+@import "slick-theme";

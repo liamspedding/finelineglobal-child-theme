@@ -1,22 +1,24 @@
 html:not(.elementor-html){ /* Prevents Elementor builder from breaking */
-    body:not(.home){
-        .elementor-section{
-            position: unset;
-    
-            .elementor-container{
+    body:not(.home):not(.page-id-711):not(.page-id-826){
+        header{
+            .elementor-section{
                 position: unset;
-    
-                .elementor-column{
+        
+                .elementor-container{
                     position: unset;
-    
-                    .elementor-widget-wrap{
+        
+                    .elementor-column{
                         position: unset;
-    
-                        .elementor-widget{
+        
+                        .elementor-widget-wrap{
                             position: unset;
-    
-                            #mega-menu-wrap-menu-1{
-                                position: unset !important;
+        
+                            .elementor-widget{
+                                position: unset;
+        
+                                #mega-menu-wrap-menu-1{
+                                    position: unset !important;
+                                }
                             }
                         }
                     }
@@ -56,4 +58,8 @@ html:not(.elementor-html){ /* Prevents Elementor builder from breaking */
             }
         }
     }
+}
+
+.elementor-17 .elementor-element.elementor-element-b6cab53 .elementor-nav-menu--main:not(.e--pointer-framed) .elementor-item:after{
+    content: none;
 }

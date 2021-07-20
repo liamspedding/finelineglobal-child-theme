@@ -97,3 +97,14 @@
 		}
 	}
 }() );
+
+
+jQuery(document).ready(function($){
+	$('.knowledge-centre-slider-wrapper').slick({
+		dots: true,
+		infinite: true,
+		speed: 300,
+		slidesToShow: 2,
+		slidesToScroll: 2,
+	});
+});
