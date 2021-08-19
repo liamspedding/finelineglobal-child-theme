@@ -156,7 +156,7 @@ function finelineglobal_scripts() {
 add_action( 'wp_enqueue_scripts', 'finelineglobal_scripts', 9999 );
 
 /**
- * Reguister Custom Post Types.
+ * Register Custom Post Types.
  */
 require get_template_directory() . '/inc/cpt/job-vacancies.php';
 require get_template_directory() . '/inc/cpt/knowledge-base.php';
@@ -165,9 +165,10 @@ require get_template_directory() . '/inc/cpt/case-studies.php';
 require get_template_directory() . '/inc/cpt/technology-portfolio.php';
 
 /**
- * Reguister Custom Shortcodes.
+ * Register Custom Shortcodes.
  */
 require get_template_directory() . '/inc/shortcodes/knowledge-base-slider.php';
+require get_template_directory() . '/inc/shortcodes/newsroom-masonry-grid.php';
 /**
  * Implement the Custom Header feature.
  */

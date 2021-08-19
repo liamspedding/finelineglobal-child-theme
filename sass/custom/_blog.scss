@@ -1,13 +1,85 @@
-// body.blog{
+.elementor-posts-container {
+   .elementor {
+      height: 100%;
 
-.elementor-posts-container{
-    .elementor{
-        height: 100%;
-
-        .elementor-section-wrap{
-            height: 100%;
-        }
-    }
+      .elementor-section-wrap {
+         height: 100%;
+      }
+   }
 }
 
-// }
+// Masonry Grid
+.newsroom-wrapper {
+   columns: 3 200px;
+   column-gap: 2rem;
+
+   .newsroom-item {
+      margin: 1em 1rem 1rem 0;
+      display: inline-block;
+      width: 100%;
+      
+      .inner-wrapper{
+         box-shadow: 0px 5px 20px 2px rgb(0 0 0 / 10%);
+         transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+      }
+      
+      .image-wrapper{
+         img{
+            border-bottom: 2px solid #EF4929;
+            min-width: 352px;
+         }
+      }
+
+      .text-wrapper{
+         padding: 0 15px 15px 15px;
+
+         .post-meta{
+
+            hr{
+               background-color: $orange;
+               width: 50px;
+               margin-top: 5px;
+            }
+
+            p{
+               margin: 0;
+               display: inline-block;
+               color: $light-blue;
+               font-family: "Proxima Nova", Sans-serif;
+               font-size: 12px;
+               font-weight: 400;
+               text-transform: uppercase;
+               letter-spacing: -0.2px;
+            }
+
+            p:first-child{
+               margin-right: 20px;
+            }
+
+         }
+
+         .title{
+            font-family: "Proxima Nova", Sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            color: $dark-blue;
+            line-height: 1;
+         }
+
+         a.link{
+            font-family: "Proxima Nova", Sans-serif;
+            font-size: 14px;
+            font-weight: 300;
+            fill: #87A2B7;
+            color: #87A2B7;
+            background-color: #445B6B00;
+            padding: 0px 0px 0px 0px;
+         }
+      }
+
+      .image-wrapper{
+         text-align: center;
+      }
+   }
+
+}
