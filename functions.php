@@ -164,6 +164,9 @@ require get_template_directory() . '/inc/cpt/timeline.php';
 require get_template_directory() . '/inc/cpt/case-studies.php';
 require get_template_directory() . '/inc/cpt/technology-portfolio.php';
 
+// Customise Post Types
+require get_template_directory() . '/inc/cpt/customise-posts.php';
+
 /**
  * Register Custom Shortcodes.
  */
