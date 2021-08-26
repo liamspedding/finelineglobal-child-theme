@@ -244,6 +244,10 @@ $slick-opacity-not-active: 0.25 !default;
                 font-family: 'Proxima Nova';
                 font-weight: 300;
                 font-size: 14px;
+
+                &:hover{
+                   color: $orange;
+                }
             }
         }
     }
