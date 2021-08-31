@@ -1,0 +1,20 @@
+// Desktop
+html[lang=ru]{
+
+   /* *** Home *** */
+
+   // 8 Blue Boxes
+   // 130 Million
+   .elementor-9 .elementor-element.elementor-element-5ca51c9 p:not(.p2){
+      display: none;
+   }
+
+   .elementor-9 .elementor-element.elementor-element-24634f0 p.p2,
+   .elementor-9 .elementor-element.elementor-element-98f0a81 p:not(.p2),
+   .elementor-9 .elementor-element.elementor-element-83278ad p:not(.p2),
+   .elementor-9 .elementor-element.elementor-element-0d82578 p:not(.p2),
+   .elementor-9 .elementor-element.elementor-element-eff7d5d p.p2{
+      margin-bottom: 24px;
+   }
+
+}
