@@ -1,0 +1,44 @@
+// Tablet
+@media screen and (max-width: 991px){
+
+   // Header
+   .elementor-17{
+      .elementor-element.elementor-element-170a555a.elementor-column.elementor-element[data-element_type="column"]{
+         > .elementor-widget-wrap.elementor-element-populated{
+            flex-direction: row-reverse;
+
+            // Language Switcher
+            .elementor-element-ee27005{
+               margin-bottom: 0px;
+               width: auto !important;
+            }
+
+            // Menu
+            .elementor-element-8fc64f4{
+               width: 75% !important;
+
+               #mega-menu-wrap-menu-1{
+                  .mega-menu-toggle{
+                     background-color: transparent;
+                  }
+
+                  #mega-menu-menu-1{
+                     position: absolute !important;
+                     width: 100%;
+                     right: 0;
+                     top: 65px;
+                     background-color: $dark-blue;
+
+                     li.mega-menu-item{
+                        > a.mega-menu-link{
+                           line-height: 50px;
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+
+}
