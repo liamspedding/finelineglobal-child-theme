@@ -158,11 +158,7 @@ add_action( 'wp_enqueue_scripts', 'finelineglobal_scripts', 9999 );
 /**
  * Register Custom Post Types.
  */
-require get_template_directory() . '/inc/cpt/job-vacancies.php';
-require get_template_directory() . '/inc/cpt/knowledge-base.php';
-require get_template_directory() . '/inc/cpt/timeline.php';
-require get_template_directory() . '/inc/cpt/case-studies.php';
-require get_template_directory() . '/inc/cpt/technology-portfolio.php';
+require get_template_directory() . '/inc/register-cpt.php';
 
 // Customise Post Types
 require get_template_directory() . '/inc/cpt/customise-posts.php';
