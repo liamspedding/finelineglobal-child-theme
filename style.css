@@ -1644,6 +1644,30 @@ section.timeline-section {
   color: #EF4929;
 }
 
+.locations-wrapper {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+}
+.locations-wrapper .location-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+}
+.locations-wrapper .location-item .inner-wrapper .text-wrapper p, .locations-wrapper .location-item .inner-wrapper .text-wrapper a {
+  font-family: "Proxima Nova";
+  color: #000;
+}
+.locations-wrapper .location-item .inner-wrapper .text-wrapper p i, .locations-wrapper .location-item .inner-wrapper .text-wrapper a i {
+  color: #EF4929;
+  margin-right: 5px;
+}
+.locations-wrapper .location-item .inner-wrapper .text-wrapper p.title {
+  margin-top: 0;
+  color: #EF4929;
+  font-size: 18px;
+}
+
 html[lang=es] {
   /* *** Home *** */
 }

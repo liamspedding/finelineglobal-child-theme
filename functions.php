@@ -168,6 +168,7 @@ require get_template_directory() . '/inc/cpt/customise-posts.php';
  */
 require get_template_directory() . '/inc/shortcodes/knowledge-base-slider.php';
 require get_template_directory() . '/inc/shortcodes/newsroom-masonry-grid.php';
+require get_template_directory() . '/inc/shortcodes/locations-shortcode.php';
 /**
  * Implement the Custom Header feature.
  */
