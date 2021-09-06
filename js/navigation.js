@@ -96,6 +96,22 @@
 			menuItem.classList.toggle( 'focus' );
 		}
 	}
+
+   // Sticky Navbar
+   window.onscroll = function() {fineLineStickyNav()};
+
+   var navbar = document.querySelector("header.elementor-section");
+   console.log(navbar);
+   var sticky = navbar.offsetTop;
+
+   function fineLineStickyNav() {
+   if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky");
+   } else {
+      navbar.classList.remove("sticky");
+   }
+   }
+      
 }() );
 
 
