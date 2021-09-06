@@ -2,66 +2,73 @@
 @media screen and (max-width: 400px){
 
       // Header
-      .elementor-17{
+      .elementor-location-header{
 
          // Topbar
-         .elementor-element-301e2cbc{
-            display: none;
-         }
+         // #top_bar{
+         //    display: none;
+         // }
 
-         .elementor-element-3f9615e1{
+         #header{
             .elementor-container{
                padding: 10px 0;
 
                .elementor-col-50{
                   width: 100% !important;
-               }
-            }
-         }
 
-         // Logo
-         .elementor-element-5d23a584{
-            padding: 0px 10px 10px 10px;
+                  // Logo
+                  &:first-child{
+                     padding: 10px 10px 20px 10px;
 
-            a{
-               width: 100%;
-               text-align: center;
-
-               img{
-                  width: 100% !important;
-               }
-            }
-         }
-
-         //  Right columns
-         .elementor-element.elementor-element-170a555a.elementor-column.elementor-element[data-element_type="column"]{
-            > .elementor-widget-wrap.elementor-element-populated{
-               flex-direction: row;
-   
-               // Language Switcher
-               // .elementor-element-ee27005{
-               //    position: absolute;
-               // }
-   
-               // Menu
-               .elementor-element-8fc64f4{
-                  width: 100% !important;
-                  position: absolute;
-                  top: 0;
-   
-                  #mega-menu-wrap-menu-1{
-   
-                     #mega-menu-menu-1{
-                        position: relative !important;
+                     a{
                         width: 100%;
-                        right: unset;
-                        top: unset;
-                        z-index: 99999;
+                        text-align: center;
+   
+                        img{
+                           width: 100% !important;
+                        }
+                     }
+                  }
+
+                  // Navbar and Language Switcher
+                  &:last-child{
+                     .elementor-widget-wrap{
+                        .elementor-widget{
+                           width: 100% !important;
+
+                           // Language Switcher
+                           &:first-child{
+                              text-align: left;
+                              margin-bottom: 0;
+                           }
+
+                           &:last-child{
+                              width: 100% !important;
+                              position: absolute;
+                              // top: 0;
+
+                              #mega-menu-wrap-menu-1{
+                                 #mega-menu-menu-1{
+                                    position: relative !important;
+                                    width: 100%;
+                                    right: unset;
+                                    top: unset !important;
+                                    z-index: 99999;
+                                 }
+                              }
+                           }
+                        }
                      }
                   }
                }
             }
          }
+
+      }
+
+      // Locations
+      .locations-wrapper{
+         grid-template-columns: 1fr;
       }
 
 }

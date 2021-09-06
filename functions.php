@@ -145,6 +145,9 @@ function finelineglobal_scripts() {
 
 	wp_enqueue_script( 'finelineglobal-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
+   wp_enqueue_script( 'titan-iframe', 'https://d3v0iqf1i1i9dg.cloudfront.net/embed/v1/ftautosize.js', null, null, true );
+
+
 	// Slick Slider
 	wp_enqueue_script( 'finelineglobal-slick', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array('jquery'), _S_VERSION, true );
 

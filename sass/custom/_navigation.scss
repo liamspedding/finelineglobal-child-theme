@@ -1,31 +1,35 @@
-html:not(.elementor-html){ /* Prevents Elementor builder from breaking */
-    body:not(.home):not(.page-id-711):not(.page-id-826){
-        header{
-            .elementor-section{
-                position: unset;
-        
-                .elementor-container{
-                    position: unset;
-        
-                    .elementor-column{
-                        position: unset;
-        
-                        .elementor-widget-wrap{
-                            position: unset;
-        
-                            .elementor-widget{
-                                position: unset;
-        
-                                #mega-menu-wrap-menu-1{
-                                    position: unset !important;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
+@media screen and (min-width: 991px){
+
+   html:not(.elementor-html){ /* Prevents Elementor builder from breaking */
+      body:not(.home):not(.page-id-711):not(.page-id-826){
+          header{
+              .elementor-section{
+                  position: unset;
+          
+                  .elementor-container{
+                      position: unset;
+          
+                      .elementor-column{
+                          position: unset;
+          
+                          .elementor-widget-wrap{
+                              position: unset;
+          
+                              .elementor-widget{
+                                  position: unset;
+          
+                                  #mega-menu-wrap-menu-1{
+                                      position: unset !important;
+                                  }
+                              }
+                          }
+                      }
+                  }
+              }
+          }
+      }
+  }
+  
 }
 
 .max-mega-menu{

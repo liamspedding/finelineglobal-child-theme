@@ -3,7 +3,10 @@
    function locations_grid_shortcode(){
 
       $args = array(
-         'post_type' => 'locations'
+         'post_type' => 'locations',
+         'posts_per_page' => -1,
+         'orderby' => 'title',
+         'order' => 'ASC'
       );
 
       $loop = new WP_Query($args);
@@ -32,31 +35,31 @@
                            <div class="text-wrapper">
                               <p class="title"><?php echo get_the_title(); ?></p>      
                               <p><?php echo $address; ?></p>
+                              <div class="contact-wrapper">
+                                 <?php
+                                 
+                                    // Check rows exists.
+                                    if( have_rows('contact_info') ):
 
-                              <?php
-                              
-                                 // Check rows exists.
-                                 if( have_rows('contact_info') ):
+                                       // Loop through rows.
+                                       while( have_rows('contact_info') ) : the_row();
 
-                                    // Loop through rows.
-                                    while( have_rows('contact_info') ) : the_row();
+                                          // Load sub field value.
+                                          $icon = get_sub_field('icon');
+                                          $link = get_sub_field('text');
 
-                                       // Load sub field value.
-                                       $icon = get_sub_field('icon');
-                                       $link = get_sub_field('text');
+                                          echo '<p class="contact-item">'. $icon .' <a href="'. $link["url"] .'">'. $link["title"] .'</a></p>';
 
-                                       echo '<p>'. $icon .' <a href="'. $link["url"] .'">'. $link["title"] .'</a></p>';
+                                       // End loop.
+                                       endwhile;
 
-                                    // End loop.
-                                    endwhile;
+                                    // No value.
+                                    else :
+                                       // Do something...
+                                    endif;
 
-                                 // No value.
-                                 else :
-                                    // Do something...
-                                 endif;
-
-                              ?>
-
+                                 ?>
+                              </div>
                            </div>
                         </div>
                      </div>
