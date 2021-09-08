@@ -1,0 +1,26 @@
+// Testimonials
+.elementor-testimonial__text{
+   &::before, &::after{
+      display: inline-block;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      // opacity: 0.4;
+      color: $dark-blue;
+      // font-size: 3em;
+      // position: absolute;
+   }
+
+   &::before{
+      content: "\f10d";
+      margin-right: 10px;
+   }
+
+   &::after{
+      content: "\f10e";
+      margin-left: 10px;
+   }
+}

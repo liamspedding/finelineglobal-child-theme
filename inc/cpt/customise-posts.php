@@ -1,20 +1,7 @@
 <?php 
 
-// add_filter('manage_posts_columns', 'posts_columns', 5);
-// add_action('manage_posts_custom_column', 'posts_custom_columns', 5, 2);
- 
-// function posts_columns($defaults){
-//     $defaults['post_thumb'] = __('Image');
-//     return $defaults;
-// }
- 
-// function posts_custom_columns($column_name, $id){
-//     if($column_name === 'post_thumb'){
-//         echo the_post_thumbnail( 'featured-thumbnail' );
-//     }
-// }
-
-function set_custom_edit_book_columns($columns) {
+// Knowledge Centre
+function set_custom_edit_knowledge_centre_columns($columns) {
    unset( $columns['title'] );
    unset( $columns['author'] );
    unset( $columns['categories'] );
@@ -28,10 +15,10 @@ function set_custom_edit_book_columns($columns) {
 
     return $columns;
 }
-add_filter( 'manage_posts_columns', 'set_custom_edit_book_columns' );
+add_filter( 'manage_knowledge-centre_posts_columns', 'set_custom_edit_knowledge_centre_columns' );
 
 // Add the data to the custom columns for the book post type:
-function custom_book_column( $column, $post_id ) {
+function custom_knowledge_centre_column( $column, $post_id ) {
       switch ( $column ) {
 
          case 'post_thumb' :
@@ -40,7 +27,36 @@ function custom_book_column( $column, $post_id ) {
 
       }
 }
-add_action( 'manage_posts_custom_column' , 'custom_book_column', 10, 2 );
+add_action( 'manage_knowledge-centre_posts_custom_column' , 'custom_knowledge_centre_column', 10, 2 );
+
+// Job Vacancies
+function set_custom_edit_job_vacancies_columns($columns) {
+   unset( $columns['title'] );
+   unset( $columns['author'] );
+   unset( $columns['categories'] );
+   unset( $columns['date'] );
+
+    $columns['title'] = __( 'Title');
+    $columns['country'] = __( 'Country');
+    $columns['date'] = __( 'Date' );
+
+    return $columns;
+}
+add_filter( 'manage_vacancies_posts_columns', 'set_custom_edit_job_vacancies_columns' );
+
+// Add the data to the custom columns for the book post type:
+function custom_job_vacancies_column( $column, $post_id ) {
+      switch ( $column ) {
+
+         case 'country' :
+            echo get_field('country', $post_id);
+            break;
+
+      }
+}
+add_action( 'manage_vacancies_posts_custom_column' , 'custom_job_vacancies_column', 10, 2 );
+
+
 
 // Add Menu Order support
 add_action('admin_init', 'mpe_add_portfolio_page_attributes');

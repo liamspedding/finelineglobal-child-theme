@@ -1,0 +1,554 @@
+@mixin desktop-medium {
+   @media (min-width: 1200px) {
+      @content;
+   }
+}
+
+// SANDBOX - refactor needed
+.whitebox-wrap section.whitebox-section h3 {
+   font-family: "Proxima Nova", Arial, sans-serif;
+   font-size: 14px;
+   font-weight: 500;
+   line-height: 1.71;
+   text-align: left;
+   color: #6f8ea6;
+   margin: 0;
+   padding-top: 15px;
+}
+
+.whitebox-wrap section.whitebox-section p {
+   font-family: "Proxima Nova", Arial, sans-serif;
+   font-size: 18px;
+   line-height: 1.33;
+   text-align: left;
+   color: #073146;
+   padding: 15px 0;
+   margin-bottom: 0;
+}
+
+.whitebox-wrap section.whitebox-section button {
+   background-color: transparent;
+   box-shadow: none;
+   border: none;
+   outline: none;
+   font-family: "Proxima Nova", Arial, sans-serif;
+   font-size: 13px;
+   font-weight: 400;
+   line-height: 1.69;
+   text-align: left;
+   color: #ff431c;
+   padding-bottom: 20px;
+   display: inline-block;
+}
+
+.knowledge-table-section {
+   ul {
+      padding-left: 0;
+   }
+
+   .bodyTable-production,
+   .bodyTable-application {
+
+      li,
+      p {
+         font-size: 1rem;
+      }
+   }
+}
+
+table {
+   width: 100%;
+}
+
+.specifications-wrap,
+.FlWrap {
+   padding-top: 0;
+}
+
+.specifications-table {
+   width: 100%;
+   position: relative;
+}
+
+.knowledge-table-wrap {
+   padding-top: 0;
+}
+
+@media screen and (max-width: 640px) {
+   .specifications-table>table {
+      overflow-x: auto;
+      display: block;
+      height: 550px;
+      margin-bottom: 5vh;
+      border-collapse: collapse;
+      border-spacing: 0;
+   }
+}
+
+.specifications-table>table thead tr {
+   background-color: #1d3d52;
+   height: 50px;
+   text-align: center;
+   color: white;
+   font-family: "Proxima Nova", Arial, sans-serif;
+   font-weight: 300;
+   font-size: 20px;
+   line-height: 1.5;
+}
+
+.specifications-table table tr.main-header>th {
+   & td:first-child {
+      border-left: 1px solid grey;
+   }
+
+   &:last-child {
+      border-right: 1px solid #1d3d52;
+      text-align: center;
+   }
+
+   &:first-child {
+      border-left: 1px solid #1d3d52;
+   }
+}
+
+.specifications-table table tr.main-header>th>table.technical-table td {
+   border: none;
+}
+
+.specifications-table table tr.main-header>th>table.technical-table tr {
+
+   & td,
+   & th {
+      border: 1px solid #6f8ea6;
+      border-right: none;
+      border-top: none;
+   }
+
+   & td {
+      border-bottom: none;
+   }
+}
+
+.specifications-table table tr.main-header span {
+   padding-left: 1em;
+   text-align: left;
+   display: block;
+}
+
+.specifications-table table tr td p {
+   text-align: center;
+}
+
+.specifications-table table tr.main-header td,
+.specifications-table table tr.main-header th {
+   font-weight: 300;
+   height: inherit;
+}
+
+.specifications-table table.technical-table {
+   height: inherit;
+   width: 100%;
+}
+
+.specifications-table table.technical-table tr td,
+.specifications-table table tr.sub-header th {
+   text-align: center;
+   height: inherit;
+   vertical-align: middle;
+}
+
+.sub-header {
+   td {
+      padding: 0 10px;
+   }
+}
+
+.specifications-table table tr td span,
+.specifications-table table tr td strong {
+   padding-left: 1em;
+   display: inline-block;
+}
+
+.specifications-table table tbody tr td span {
+   font-family: "Proxima Nova", Arial, sans-serif;
+   font-size: 14px;
+   line-height: 1.43;
+   text-align: left;
+   color: #1d3d52;
+}
+
+.specifications-table table tbody tr td strong {
+   font-family: "Proxima Nova", Arial, sans-serif;
+   font-size: 14px;
+   line-height: 1.43;
+   text-align: left;
+   color: #ff431c;
+   font-weight: 400;
+   text-transform: uppercase;
+}
+
+.specifications-table table tr {
+   height: 55px;
+}
+
+.specifications-table table tr td {
+   border: 1px solid #6f8ea6;
+}
+
+.specifications-table table tr td>table tr td {
+   border: none;
+   border-bottom: 1px solid #6f8ea6;
+
+   &:last-child {
+      border-bottom: none;
+   }
+}
+
+.specifications-table table tbody tr td>table tr {
+   border-bottom: 1px solid #6f8ea6;
+
+   &:last-child {
+      border-bottom: none;
+   }
+}
+
+
+//Knowledge-base-surface-finishes desktop only:
+section.knowledge-table-section {
+   display: flex;
+   flex-direction: column;
+}
+
+section.knowledge-table-section h3 {
+   padding: 1em;
+   font-family: "Proxima Nova", Arial, sans-serif;
+   font-size: 20px;
+   line-height: 1.5;
+   font-weight: 400;
+   text-align: left;
+   color: #073146;
+   margin: 0;
+   text-transform: uppercase;
+}
+
+section.knowledge-table-section ul {
+   list-style: none;
+   display: flex;
+   justify-content: space-around;
+   align-items: stretch;
+   max-width: 1140px;
+   margin: 0 auto;
+}
+
+section.knowledge-table-section ul li {
+   flex: 3;
+   width: 11%;
+   padding: 10px;
+   padding-right: 0;
+   border-left: 1px solid #eff2f4;
+   border-bottom: 1px solid #eff2f4;
+   text-transform: capitalize;
+   position: relative;
+   //&:last-child {
+   //  border-left-width: 13px;
+   //}
+}
+
+section.knowledge-table-section .bodyTable-production:nth-child(odd) {
+   background-color: #e1e7ec;
+}
+
+section.knowledge-table-section .bodyTable-production:nth-child(even) {
+   background-color: white;
+}
+
+section.knowledge-table-section .bodyTable-application:nth-child(odd) {
+   background-color: white;
+}
+
+section.knowledge-table-section .bodyTable-application:nth-child(even) {
+   background-color: #e1e7ec;
+}
+
+section.knowledge-table-section ul li:first-child,
+section.knowledge-table-section ul li:first-child>p {
+   flex: 5;
+   width: 17%;
+   background-color: #6f8ea6;
+   color: white;
+   font-family: "Proxima Nova", Arial, sans-serif;
+   font-size: 14px;
+   line-height: 1.43;
+   text-transform: uppercase;
+}
+
+section.knowledge-table-section ul li:last-child {
+   flex: 4;
+   width: 15%;
+}
+
+section.knowledge-table-section ul.header li {
+   border-left: 1px solid #eff2f4;
+   padding: 1em;
+   font-family: "Proxima Nova", Arial, sans-serif;
+   font-size: 16px;
+   line-height: 1.63;
+   color: white;
+   font-weight: 400;
+   background-color: #1d3d52;
+   text-transform: uppercase;
+   align-items: flex-start;
+
+   p {
+      margin-bottom: 15px;
+   }
+}
+
+section.knowledge-table-section ul.header li:first-child {
+   border-left-color: transparent;
+   font-family: "Proxima Nova", Arial, sans-serif;
+   font-size: 20px;
+}
+
+section.knowledge-table-section ul.header li:last-child {
+   //border-left: 13px solid #eff2f4;
+}
+
+.FlContainer {
+   display: flex;
+   align-items: flex-start;
+}
+
+.FlContainer section ul {
+   list-style: none;
+   margin-bottom: 0;
+}
+
+.FlContainer section ul li {
+   padding: 5px 0px 5px 25px;
+   box-sizing: border-box;
+   border-bottom: 1px solid;
+   list-style: none;
+}
+
+.FlContainer section ul li strong {
+   font-family: "Proxima Nova", Arial, sans-serif;
+   font-size: 14px;
+   font-weight: 600;
+   line-height: 2.14;
+   text-align: left;
+   color: #073146;
+}
+
+.FlContainer section ul li span {
+   font-family: "Proxima Nova", Arial, sans-serif;
+   font-size: 14px;
+   line-height: 1.88;
+   text-align: left;
+   color: #1d3d52;
+}
+
+.finalFinishing-section {
+   width: 29.4%;
+}
+
+.finalFinishing-section h3,
+.finalFinishing-section ul {
+   width: 90%;
+}
+
+.technologies-section {
+   width: 70.8%;
+}
+
+.FlContainer h3 {
+   padding: 10px 0px 10px 25px;
+   background-color: #1d3d52;
+   text-transform: uppercase;
+   font-family: "Proxima Nova", Arial, sans-serif;
+   font-size: 20px;
+   font-weight: 300;
+   line-height: 1.5;
+   text-align: left;
+   color: #ffffff;
+   margin-bottom: 13px;
+}
+
+table tr td.table-space {
+   position: relative;
+   padding-left: 2px;
+}
+
+table tr td.table-space::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 1px;
+   width: 1px;
+   background-color: #6f8ea6;
+}
+
+section.knowledge-table-section ul li {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   p {
+      margin: 0;
+   }
+}
+
+//tooltip for the surfes finishes table
+.tooltip-wrapper {
+   width: 30px;
+   height: 30px;
+
+   @include desktop-medium {
+      width: 40px;
+      height: 40px;
+   }
+
+   background-color: rgba(255, 255, 255, 0.4);
+   border-radius: 50%;
+   cursor: pointer;
+
+   ul.header & {
+      position: absolute;
+      bottom: -20px;
+      z-index: 3;
+   }
+
+   ul.body & {
+      position: relative;
+      z-index: 3;
+   }
+}
+
+.tooltip-wrapper::before {
+   content: "";
+   display: block;
+   width: 19px;
+   height: 19px;
+
+   @include desktop-medium {
+      width: 24px;
+      height: 24px;
+      margin: -12px auto 0;
+   }
+
+   background-color: #fff;
+   border-radius: 50%;
+   position: relative;
+   margin: -9.5px auto 0;
+   top: 50%;
+   border: solid 1px #c2ced4;
+}
+
+.tooltip-wrapper::after {
+   content: "+";
+   display: block;
+   font-size: 24px;
+   font-family: "Proxima Nova", Arial, sans-serif;
+   margin: 0 auto;
+   position: absolute;
+   top: 15px;
+   width: 10px;
+   left: 11px;
+   color: #ff431c;
+   line-height: 0;
+
+   @include desktop-medium {
+      top: 20px;
+      left: 14px;
+   }
+}
+
+.tooltip-wrapper:hover .tooltip-holder {
+   display: block;
+}
+
+.tooltip-holder {
+   display: none;
+   position: absolute;
+   bottom: 55px;
+   background-color: #f1f5f7;
+   box-shadow: 0 0 4px 0 rgba(167, 183, 195, 0.7);
+   min-width: 160px;
+   z-index: 300;
+   padding: 10px;
+
+   h4 {
+      font-family: "Proxima Nova", Arial, sans-serif;
+      font-size: 14px;
+      // line-height: 1.57;
+      color: #ff431c;
+   }
+
+   p {
+      text-transform: none;
+      font-family: "Proxima Nova", Arial, sans-serif;
+      font-size: 12px;
+      // line-height: 1.38;
+      text-align: left;
+      color: #1d3d52;
+   }
+
+   &::after {
+      content: "";
+      display: block;
+      width: 14px;
+      height: 14px;
+      position: absolute;
+      bottom: -11px;
+      width: 0px;
+      height: 0px;
+   }
+}
+
+.tooltip-center {
+   @extend .tooltip-holder;
+   left: -140%;
+   right: auto;
+
+   &::after {
+      transform: rotate(45deg);
+      border-color: transparent;
+      border-style: solid;
+      border-width: 0 0 14px 14px;
+      border-bottom-color: #f1f5f7;
+      border-left-color: rgba(75, 0, 130, 0);
+      bottom: -7px;
+      left: 43%;
+   }
+}
+
+.tooltip-left {
+   @extend .tooltip-holder;
+   left: 50%;
+   right: auto;
+
+   &::after {
+      border-color: transparent;
+      border-style: solid;
+      border-width: 14px 14px 0 0;
+      border-top-color: #f1f5f7;
+      border-right-color: rgba(0, 0, 255, 0);
+      left: 0;
+   }
+}
+
+.tooltip-right {
+   @extend .tooltip-holder;
+   right: 50%;
+   left: auto;
+
+   &::after {
+      border-color: transparent;
+      border-style: solid;
+      border-width: 0 14px 14px 0;
+      border-right-color: #f1f5f7;
+      border-bottom-color: rgba(0, 255, 255, 0);
+      right: 0px;
+   }
+}

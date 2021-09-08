@@ -48,8 +48,8 @@ function finelineglobal_job_vacancies_custom_post_type() {
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
-        'menu_icon'             => 'dashicons-businessman',
-		'has_archive'           => true,
+      'menu_icon'             => 'dashicons-businessman',
+		'has_archive'           => false,
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'post',
@@ -58,5 +58,3 @@ function finelineglobal_job_vacancies_custom_post_type() {
 
 }
 add_action( 'init', 'finelineglobal_job_vacancies_custom_post_type', 0 );
-
-?>
