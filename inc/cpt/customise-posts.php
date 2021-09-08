@@ -63,5 +63,6 @@ add_action('admin_init', 'mpe_add_portfolio_page_attributes');
 function mpe_add_portfolio_page_attributes(){
 
     add_post_type_support( 'technology-portfolio', 'page-attributes' );
+    add_post_type_support( 'knowledge-centre', 'page-attributes' );
 
 }

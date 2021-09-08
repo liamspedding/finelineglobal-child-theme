@@ -48,7 +48,7 @@ function finelineglobal_job_knowledge_base_custom_post_type() {
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
-        'menu_icon'             => 'dashicons-grid-view',
+      'menu_icon'             => 'dashicons-grid-view',
 		'has_archive'           => true,
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,

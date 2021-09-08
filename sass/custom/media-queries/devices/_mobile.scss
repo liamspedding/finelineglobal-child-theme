@@ -19,10 +19,18 @@
                   // Logo
                   &:first-child{
                      padding: 10px 10px 20px 10px;
+                     position: absolute;
+                     width: 70% !important;
+                     z-index: 99;
+
+                     .elementor-widget-shortcode{
+                        position: absolute;
+                        text-align: right;
+                        top: -61px;
+                     }
 
                      a{
                         width: 100%;
-                        text-align: center;
    
                         img{
                            width: 100% !important;
@@ -38,8 +46,11 @@
 
                            // Language Switcher
                            &:first-child{
-                              text-align: left;
+                              text-align: right;
                               margin-bottom: 0;
+                              position: absolute;
+                              top: -50px;
+                              right: 10px;
                            }
 
                            &:last-child{
@@ -52,8 +63,27 @@
                                     position: relative !important;
                                     width: 100%;
                                     right: unset;
-                                    top: unset !important;
-                                    z-index: 99999;
+                                    top: 60px !important;
+                                    z-index: 9 !important;
+                                    padding: 0 10px;
+
+                                    > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link{
+                                       font-size: 16px;
+                                       color: #fff;
+                                    }
+
+                                    // Hide Mega Menu Titles on Mobile
+                                    #mega-menu-3148-0, #mega-menu-3154-0, #mega-menu-3432-0{
+                                       display: none;
+                                    }
+                                 }
+
+                                 .mega-menu-toggle{
+                                    .mega-toggle-block-0{
+                                       .mega-toggle-animated{
+                                          padding-right: 10px;
+                                       }
+                                    }
                                  }
                               }
                            }

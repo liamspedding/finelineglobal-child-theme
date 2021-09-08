@@ -3442,6 +3442,13 @@ html[lang=zh] .elementor-9 .elementor-element.elementor-element-24634f0 p {
     right: 0;
     top: 65px;
     background-color: #153246;
+    z-index: 999999;
+  }
+  .elementor-location-header #header .elementor-container > .elementor-column.elementor-col-50:last-child > .elementor-widget-wrap.elementor-element-populated > .elementor-widget:last-child #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu {
+    padding: 0 10px !important;
+  }
+  .elementor-location-header #header .elementor-container > .elementor-column.elementor-col-50:last-child > .elementor-widget-wrap.elementor-element-populated > .elementor-widget:last-child #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item.mega-toggle-on > a.mega-menu-link {
+    background-color: #EF4929;
   }
   .elementor-location-header #header .elementor-container > .elementor-column.elementor-col-50:last-child > .elementor-widget-wrap.elementor-element-populated > .elementor-widget:last-child #mega-menu-wrap-menu-1 #mega-menu-menu-1 li.mega-menu-item > a.mega-menu-link {
     line-height: 50px;
@@ -3466,10 +3473,17 @@ html[lang=zh] .elementor-9 .elementor-element.elementor-element-24634f0 p {
   }
   .elementor-location-header #header .elementor-container .elementor-col-50:first-child {
     padding: 10px 10px 20px 10px;
+    position: absolute;
+    width: 70% !important;
+    z-index: 99;
+  }
+  .elementor-location-header #header .elementor-container .elementor-col-50:first-child .elementor-widget-shortcode {
+    position: absolute;
+    text-align: right;
+    top: -61px;
   }
   .elementor-location-header #header .elementor-container .elementor-col-50:first-child a {
     width: 100%;
-    text-align: center;
   }
   .elementor-location-header #header .elementor-container .elementor-col-50:first-child a img {
     width: 100% !important;
@@ -3478,8 +3492,11 @@ html[lang=zh] .elementor-9 .elementor-element.elementor-element-24634f0 p {
     width: 100% !important;
   }
   .elementor-location-header #header .elementor-container .elementor-col-50:last-child .elementor-widget-wrap .elementor-widget:first-child {
-    text-align: left;
+    text-align: right;
     margin-bottom: 0;
+    position: absolute;
+    top: -50px;
+    right: 10px;
   }
   .elementor-location-header #header .elementor-container .elementor-col-50:last-child .elementor-widget-wrap .elementor-widget:last-child {
     width: 100% !important;
@@ -3489,8 +3506,19 @@ html[lang=zh] .elementor-9 .elementor-element.elementor-element-24634f0 p {
     position: relative !important;
     width: 100%;
     right: unset;
-    top: unset !important;
-    z-index: 99999;
+    top: 60px !important;
+    z-index: 9 !important;
+    padding: 0 10px;
+  }
+  .elementor-location-header #header .elementor-container .elementor-col-50:last-child .elementor-widget-wrap .elementor-widget:last-child #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link {
+    font-size: 16px;
+    color: #fff;
+  }
+  .elementor-location-header #header .elementor-container .elementor-col-50:last-child .elementor-widget-wrap .elementor-widget:last-child #mega-menu-wrap-menu-1 #mega-menu-menu-1 #mega-menu-3148-0, .elementor-location-header #header .elementor-container .elementor-col-50:last-child .elementor-widget-wrap .elementor-widget:last-child #mega-menu-wrap-menu-1 #mega-menu-menu-1 #mega-menu-3154-0, .elementor-location-header #header .elementor-container .elementor-col-50:last-child .elementor-widget-wrap .elementor-widget:last-child #mega-menu-wrap-menu-1 #mega-menu-menu-1 #mega-menu-3432-0 {
+    display: none;
+  }
+  .elementor-location-header #header .elementor-container .elementor-col-50:last-child .elementor-widget-wrap .elementor-widget:last-child #mega-menu-wrap-menu-1 .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated {
+    padding-right: 10px;
   }
 
   .locations-wrapper {

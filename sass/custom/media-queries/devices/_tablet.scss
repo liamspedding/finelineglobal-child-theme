@@ -24,6 +24,15 @@
                      right: 0;
                      top: 65px;
                      background-color: $dark-blue;
+                     z-index: 999999;
+
+                     > li.mega-menu-megamenu > ul.mega-sub-menu{
+                        padding: 0 10px !important;
+                     }
+
+                     > li.mega-menu-item.mega-toggle-on > a.mega-menu-link{
+                        background-color: $orange;
+                     }
 
                      li.mega-menu-item{
                         > a.mega-menu-link{
@@ -62,53 +71,3 @@
    }
 
 }
-
-
-// @media screen and (max-width: 991px){
-
-//    // Header
-//    .elementor-location-header{
-//       #header .elementor-container > .elementor-column.elementor-col-50:last-child{
-//          > .elementor-widget-wrap.elementor-element-populated{
-//             flex-direction: row-reverse;
-
-//             > .elementor-widget:first-child{
-//                text-align: left;
-//                margin-bottom: 0px;
-//                width: 100% !important;
-//             }
-
-//             > .elementor-widget:last-child{
-//                width: 100% !important;
-
-//                #mega-menu-wrap-menu-1{
-//                   .mega-menu-toggle{
-//                      background-color: transparent;
-//                   }
-
-//                   #mega-menu-menu-1{
-//                      position: absolute !important;
-//                      width: 100%;
-//                      right: 0;
-//                      top: 46px;
-//                      background-color: $dark-blue;
-
-//                      li.mega-menu-item{
-//                         > a.mega-menu-link{
-//                            line-height: 50px;
-//                         }
-//                      }
-//                   }
-//                }
-//             }
-            
-//          }
-//       }
-//    }
-
-//    // Locations
-//    .locations-wrapper{
-//       grid-template-columns: repeat(2, 1fr);
-//    }
-
-// }
