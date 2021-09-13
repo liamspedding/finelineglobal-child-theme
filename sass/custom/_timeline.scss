@@ -163,8 +163,12 @@
 .timeline-wrapper .timeline-content-container .transparent-btn-red {
    display: inline-block;
    margin: 15px 0 0 0;
-   width: auto;
-   padding: 7px 10px;
+   width: 100%;
+   padding: 7px 5px;
+   text-transform: capitalize;
+   background-color: $orange;
+   color: #fff;
+   text-align: center;
 }
 
 .timeline-wrapper .timeline-content-container h3 {
@@ -172,20 +176,25 @@
    text-transform: uppercase;
    font-size: 18px;
    line-height: 1.42;
-   font-weight: bold;
+   font-weight: 600;
    margin-top: 0px;
+   color: #000;
 }
 
 .timeline-wrapper .timeline-content-container h3.timeline-title {
-   font-size: 24px;
-   font-weight: 100;
+   font-size: 20px;
+   color: $orange;
+   font-weight: 500;
+   margin-bottom: 0;
+   margin-top: 15px;
 }
 
 .timeline-wrapper .timeline-content-container p {
    font-family: "Proxima Nova", Arial, sans-serif;
-   font-size: 20px;
-   font-weight: 100;
+   color: #000;
    line-height: 1.5;
+   // font-size: 20px;
+   // font-weight: 100;
 }
 
 .timeline-wrapper .timeline-content-container .sub-timeline-content-container {

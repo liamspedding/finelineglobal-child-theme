@@ -1175,8 +1175,12 @@ textarea {
 .timeline-wrapper .timeline-content-container .transparent-btn-red {
   display: inline-block;
   margin: 15px 0 0 0;
-  width: auto;
-  padding: 7px 10px;
+  width: 100%;
+  padding: 7px 5px;
+  text-transform: capitalize;
+  background-color: #EF4929;
+  color: #fff;
+  text-align: center;
 }
 
 .timeline-wrapper .timeline-content-container h3 {
@@ -1184,19 +1188,22 @@ textarea {
   text-transform: uppercase;
   font-size: 18px;
   line-height: 1.42;
-  font-weight: bold;
+  font-weight: 600;
   margin-top: 0px;
+  color: #000;
 }
 
 .timeline-wrapper .timeline-content-container h3.timeline-title {
-  font-size: 24px;
-  font-weight: 100;
+  font-size: 20px;
+  color: #EF4929;
+  font-weight: 500;
+  margin-bottom: 0;
+  margin-top: 15px;
 }
 
 .timeline-wrapper .timeline-content-container p {
   font-family: "Proxima Nova", Arial, sans-serif;
-  font-size: 20px;
-  font-weight: 100;
+  color: #000;
   line-height: 1.5;
 }
 
@@ -3342,7 +3349,11 @@ html[lang=es] .elementor-9 .elementor-element.elementor-element-cdd691d .element
 }
 
 html[lang=fr] {
+  /* *** Navbar *** */
   /* *** Home *** */
+}
+html[lang=fr] #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item > a.mega-menu-link {
+  font-size: 13px;
 }
 html[lang=fr] .elementor-9 .elementor-element.elementor-element-1537690 {
   max-width: 250px !important;
