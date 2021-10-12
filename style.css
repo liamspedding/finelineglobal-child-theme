@@ -1028,6 +1028,10 @@ textarea {
   content: none;
 }
 
+body.page-id-752 .elementor-1226 .elementor-element.elementor-element-798fcc4a:not(.elementor-motion-effects-element-type-background) {
+  background-position: 50% 70%;
+}
+
 .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -1284,9 +1288,9 @@ textarea {
 
 .the-line {
   position: absolute;
-  top: 51px;
+  top: 68px;
   bottom: 0px;
-  left: 49.7%;
+  left: 49.35%;
   width: 5px;
   background-color: #6f8ea6;
 }
@@ -1333,7 +1337,7 @@ section.timeline-section {
 }
 
 .the-context::before {
-  top: 51px;
+  top: 58px;
 }
 
 .the-context::after {

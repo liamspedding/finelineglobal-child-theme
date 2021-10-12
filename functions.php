@@ -207,3 +207,51 @@ function themename_post_formats_setup() {
 	// add_post_type_support( 'my_custom_post_type', 'post-formats' );
 }
 add_action( 'after_setup_theme', 'themename_post_formats_setup' );
+
+function wpb_login_logo() { ?>
+   <style type="text/css">
+      body{
+         background-color: #153246 !important;
+         background-image: url(https://www.fineline-global.com/wp-content/uploads/2021/10/contact-us-form-bg-40.png) !important;
+         background-size: auto !important;
+         background-repeat: no-repeat !important;
+         background-position: 100% 0 !important;
+      }
+
+      #login h1 a, .login h1 a {
+         background-image: url(https://www.fineline-global.com/wp-content/uploads/2021/07/fineline-logo.svg);
+         height: 100px;
+         width: 300px;
+         background-size: 300px 100px;
+         background-repeat: no-repeat;
+         padding-bottom: 10px;
+      }
+
+      #login form p{
+         margin-top: 15px !important;
+      }
+
+      #login form p.submit{
+         margin-top: 15px !important;
+      }
+
+      .login #backtoblog a, .login #nav a{
+         color: #eee !important;
+      }
+
+      .wp-core-ui .button-primary{
+         background: #EF4929 !important;
+         border-color: #EF4929 !important;
+      }
+
+      .wp-core-ui .button-primary.focus, .wp-core-ui .button-primary:focus{
+         box-shadow: 0 0 0 1px #fff, 0 0 0 3px #EF4929 !important;
+      }
+
+      input[type=text]:focus, input[type=password]:focus, input[type=checkbox]:focus{
+         border-color: #EF4929 !important;
+         box-shadow: 0 0 0 1px #EF4929 !important;
+      }
+   </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'wpb_login_logo' );
