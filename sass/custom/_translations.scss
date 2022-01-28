@@ -1,0 +1,34 @@
+// di-soric german/english button display
+html[lang=de]:not(.elementor-html){
+    #btn-eng{
+        display: none;
+    }
+}
+
+html[lang=en-GB]:not(.elementor-html){
+    #btn-ger{
+        display: none;
+    }
+}
+
+
+/* *** FAQ news article only in Swedish *** */
+
+// Hide on all other languages
+article#post-5596, article#post-5743{
+   display: none;
+}
+
+// Show on Swedish
+html[lang=sv]:not(.elementor-html){
+   article#post-5596{
+       display: block !important;
+   }
+}
+
+// Show on German
+// html[lang=de]:not(.elementor-html){
+//    article#post-5743{
+//        display: block !important;
+//    }
+// }

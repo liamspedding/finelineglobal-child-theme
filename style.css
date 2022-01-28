@@ -922,6 +922,32 @@ textarea {
   margin-left: 10px;
 }
 
+.pcb-btn {
+  font-family: "Proxima Nova", Sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  background-color: #EF4929;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #EF4929;
+  font-size: 14px;
+  padding: 3px 25px;
+  color: #fff;
+  margin: 20px 0px;
+  display: block;
+  width: max-content;
+}
+.pcb-btn:hover {
+  background-color: transparent;
+  color: #EF4929;
+}
+.pcb-btn:visited {
+  color: #fff;
+}
+.pcb-btn:visited:hover {
+  color: #EF4929;
+}
+
 .home .home-cover-btn {
   display: inline-block;
 }
@@ -1030,6 +1056,10 @@ textarea {
 
 body.page-id-752 .elementor-1226 .elementor-element.elementor-element-798fcc4a:not(.elementor-motion-effects-element-type-background) {
   background-position: 50% 70%;
+}
+
+body.postid-5029 .elementor-1218 .elementor-element.elementor-element-0e718f9 .elementor-heading-title {
+  text-transform: none;
 }
 
 .container {
@@ -3338,6 +3368,23 @@ ul.body .tooltip-wrapper {
 }
 .locations-wrapper .location-item .inner-wrapper .text-wrapper .contact-wrapper .contact-item:nth-child(2) {
   margin-top: 0;
+}
+
+html[lang=de]:not(.elementor-html) #btn-eng {
+  display: none;
+}
+
+html[lang=en-GB]:not(.elementor-html) #btn-ger {
+  display: none;
+}
+
+/* *** FAQ news article only in Swedish *** */
+article#post-5596, article#post-5743 {
+  display: none;
+}
+
+html[lang=sv]:not(.elementor-html) article#post-5596 {
+  display: block !important;
 }
 
 html[lang=es] {

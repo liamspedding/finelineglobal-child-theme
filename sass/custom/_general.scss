@@ -24,3 +24,32 @@
       margin-left: 10px;
    }
 }
+
+.pcb-btn{
+   font-family: "Proxima Nova", Sans-serif;
+   font-weight: 300;
+   text-transform: uppercase;
+   background-color: $orange;
+   border-style: solid;
+   border-width: 1px 1px 1px 1px;
+   border-color: $orange;
+   font-size: 14px;
+   padding: 3px 25px;
+   color: #fff;
+   margin: 20px 0px;
+   display: block;
+   width: max-content;
+
+   &:hover{
+      background-color: transparent;
+      color: $orange;
+   }
+
+   &:visited{
+      color: #fff;
+
+      &:hover{
+         color: $orange;
+      }
+   }
+}
