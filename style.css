@@ -3503,9 +3503,9 @@ html[lang=zh] .elementor-9 .elementor-element.elementor-element-24634f0 p {
   }
   .elementor-location-header #header .elementor-container > .elementor-column.elementor-col-50:last-child > .elementor-widget-wrap.elementor-element-populated > .elementor-widget:last-child #mega-menu-wrap-menu-1 #mega-menu-menu-1 {
     position: absolute !important;
-    width: 100%;
+    width: 100vw;
     right: 0;
-    top: 65px;
+    top: 44px;
     background-color: #153246;
     z-index: 999999;
   }
