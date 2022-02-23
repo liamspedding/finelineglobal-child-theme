@@ -2518,7 +2518,7 @@ section.timeline-section {
 .knowledge-table-section .bodyTable-production p,
 .knowledge-table-section .bodyTable-application li,
 .knowledge-table-section .bodyTable-application p {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 table {
@@ -2698,7 +2698,6 @@ section.knowledge-table-section ul li {
   border-bottom: 1px solid #eff2f4;
   text-transform: capitalize;
   position: relative;
-  font-size: 14px;
 }
 
 section.knowledge-table-section .bodyTable-production:nth-child(odd) {
