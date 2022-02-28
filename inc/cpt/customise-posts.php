@@ -49,7 +49,10 @@ function custom_job_vacancies_column( $column, $post_id ) {
       switch ( $column ) {
 
          case 'country' :
-            echo get_field('country', $post_id);
+            $countries = get_field('country', $post_id);
+
+            foreach( $countries as $country)
+               echo $country;
             break;
 
       }
