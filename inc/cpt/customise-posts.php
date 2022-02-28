@@ -51,9 +51,15 @@ function custom_job_vacancies_column( $column, $post_id ) {
          case 'country' :
             $countries = get_field('country', $post_id);
 
-            foreach( $countries as $country)
-               echo $country;
-            break;
+            if( count($countries) == 1 ) :
+               echo $countries[0];
+            else:
+
+               foreach( $countries as $country)
+                  echo $country;
+               break;
+
+            endif;
 
       }
 }
