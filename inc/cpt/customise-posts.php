@@ -52,10 +52,8 @@ function custom_job_vacancies_column( $column, $post_id ) {
 
             $countriesData = get_field('country', $post_id);
             $countries = implode(', ', $countriesData);
-
-            foreach( $countries as $country)
-               echo $country;
-            break;
+            
+            echo $countries;
 
       }
 }
