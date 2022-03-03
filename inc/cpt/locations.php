@@ -41,7 +41,7 @@ function finelineglobal_locations_custom_post_type() {
 		'labels'                => $labels,
 		'supports'              => array( 'title' ),
 		'hierarchical'          => false,
-		'public'                => true,
+		'public'                => false,
 		'show_ui'               => true,
 		'show_in_menu'          => true,
 		'menu_position'         => 5,
@@ -51,7 +51,7 @@ function finelineglobal_locations_custom_post_type() {
       'menu_icon'             => 'dashicons-admin-site-alt3',
 		'has_archive'           => false,
 		'exclude_from_search'   => true,
-		'publicly_queryable'    => true,
+		'publicly_queryable'    => false,
 		'capability_type'       => 'post',
 	);
 	register_post_type( 'locations', $args );
