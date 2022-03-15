@@ -48,7 +48,11 @@
                                           $icon = get_sub_field('icon');
                                           $link = get_sub_field('text');
 
-                                          echo '<p class="contact-item">'. $icon .' <a href="'. $link["url"] .'">'. $link["title"] .'</a></p>';
+                                          if( empty($icon) || empty($link) ) :
+
+                                             echo '<p class="contact-item">'. $icon .' <a href="'. $link["url"] .'">'. $link["title"] .'</a></p>';
+
+                                          endif;
 
                                        // End loop.
                                        endwhile;
