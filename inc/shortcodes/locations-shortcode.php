@@ -27,6 +27,7 @@
                   $loop->the_post();
 
                   $address = get_field('address');
+                  $extra_info = get_field('extra_info');
 
                   ?>
 
@@ -35,6 +36,7 @@
                            <div class="text-wrapper">
                               <p class="title"><?php echo get_the_title(); ?></p>      
                               <p><?php echo $address; ?></p>
+                              <p><?php echo $extra_info; ?></p>
                               <div class="contact-wrapper">
                                  <?php
                                  
