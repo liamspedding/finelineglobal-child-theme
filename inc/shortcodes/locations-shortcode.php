@@ -36,7 +36,6 @@
                            <div class="text-wrapper">
                               <p class="title"><?php echo get_the_title(); ?></p>      
                               <p><?php echo $address; ?></p>
-                              <p><?php if( !empty($extra_info) ) : echo $extra_info; endif; ?></p>
                               <div class="contact-wrapper">
                                  <?php
                                  
@@ -66,6 +65,7 @@
 
                                  ?>
                               </div>
+                              <p><?php if( !empty($extra_info) ) : echo $extra_info; endif; ?></p>
                            </div>
                         </div>
                      </div>
